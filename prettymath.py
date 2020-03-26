@@ -24,5 +24,9 @@ parser.add_argument(
 
 args = parser.parse_args()
 
-for expression in args.expressions :
-    pprint(parse_expr(expression), use_unicode=args.use_unicode)
+def main():
+    for expression in args.expressions :
+        pprint(parse_expr(expression), use_unicode=args.use_unicode)
+
+if __name__ == "__main__":
+    main()

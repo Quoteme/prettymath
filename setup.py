@@ -5,4 +5,5 @@ setup(name='prettymath',
       author='Luca Leon Happel',
       url='https://github.com/Quoteme/prettymath/',
       py_modules=['prettymath'],
+      entry_points={"console_scripts": ["prettymath=prettymath:main"]}
       )
