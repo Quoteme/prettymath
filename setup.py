@@ -4,6 +4,8 @@ setup(name='prettymath',
       version='1.0',
       author='Luca Leon Happel',
       url='https://github.com/Quoteme/prettymath/',
-      py_modules=['prettymath'],
-      entry_points={"console_scripts": ["prettymath=prettymath:main"]}
+      packages=['prettymath'],
+      entry_points={"console_scripts": ["prettymath=prettymath.__main__:main"]},
+      include_package_data=True,
+      zip_safe=False
       )
