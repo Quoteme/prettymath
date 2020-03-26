@@ -13,41 +13,41 @@ Print formulas the pretty way inside your terminal.
 
 ### Examples
 	$ ./prettymath.py "a*b+x"
-		a*b + x
+	a*b + x
 	$ ./prettymath.py "a*b+x" "Integral(x**2,x)"
 		a*b + x
-		  /
-		 |
-		 |  2
-		 | x  dx
-		 |
-		/
+	  /
+	 |
+	 |  2
+	 | x  dx
+	 |
+	/
 	./prettymath.py "Limit(1/x, x, 0)"
-			 1
-		 lim -
-		x->0+x
+		 1
+	 lim -
+	x->0+x
 	./prettymath.py -u "Limit(1/x, x, 0)"
-			 1
-		 lim ─
-		x─→0⁺x
+		 1
+	 lim ─
+	x─→0⁺x
 	./prettymath.py "Sum(k**-2, (k, 1, n))"
-		  n
-		____
-		\   `
-		 \    1
-		  \   --
-		  /    2
-		 /    k
-		/___,
-		k = 1
+	  n
+	____
+	\   `
+	 \    1
+	  \   --
+	  /    2
+	 /    k
+	/___,
+	k = 1
 	./prettymath.py -u "Sum(k**-2, (k, 1, n))"
-		  n
-		 ____
-		 ╲
-		  ╲   1
-		   ╲  ──
-		   ╱   2
-		  ╱   k
-		 ╱
-		 ‾‾‾‾
-		k = 1
+	  n
+	 ____
+	 ╲
+	  ╲   1
+	   ╲  ──
+	   ╱   2
+	  ╱   k
+	 ╱
+	 ‾‾‾‾
+	k = 1
