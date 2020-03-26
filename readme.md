@@ -12,42 +12,54 @@ Print formulas the pretty way inside your terminal.
 - `...` all following strings are treated as expressions
 
 ### Examples
-	$ ./prettymath.py "a*b+x"
+```bash
+$ ./prettymath.py "a*b+x"
+a*b + x
+```
+```bash
+$ ./prettymath.py "a*b+x" "Integral(x**2,x)"
 	a*b + x
-	$ ./prettymath.py "a*b+x" "Integral(x**2,x)"
-		a*b + x
-	  /
-	 |
-	 |  2
-	 | x  dx
-	 |
-	/
-	./prettymath.py "Limit(1/x, x, 0)"
-		 1
-	 lim -
-	x->0+x
-	./prettymath.py -u "Limit(1/x, x, 0)"
-		 1
-	 lim ─
-	x─→0⁺x
-	./prettymath.py "Sum(k**-2, (k, 1, n))"
-	  n
-	____
-	\   `
-	 \    1
-	  \   --
-	  /    2
-	 /    k
-	/___,
-	k = 1
-	./prettymath.py -u "Sum(k**-2, (k, 1, n))"
-	  n
-	 ____
-	 ╲
-	  ╲   1
-	   ╲  ──
-	   ╱   2
-	  ╱   k
-	 ╱
-	 ‾‾‾‾
-	k = 1
+  /
+ |
+ |  2
+ | x  dx
+ |
+/
+```
+```bash
+./prettymath.py "Limit(1/x, x, 0)"
+	 1
+ lim -
+x->0+x
+```
+```bash
+./prettymath.py -u "Limit(1/x, x, 0)"
+	 1
+ lim ─
+x─→0⁺x
+```
+```bash
+./prettymath.py "Sum(k**-2, (k, 1, n))"
+  n
+____
+\   `
+ \    1
+  \   --
+  /    2
+ /    k
+/___,
+k = 1
+```
+```bash
+./prettymath.py -u "Sum(k**-2, (k, 1, n))"
+  n
+ ____
+ ╲
+  ╲   1
+   ╲  ──
+   ╱   2
+  ╱   k
+ ╱
+ ‾‾‾‾
+k = 1
+```
