@@ -2,6 +2,20 @@
 
 Print formulas the pretty way inside your terminal.
 
+### Installation
+
+#### Arch Linux
+
+The program is available in the AUR as `prettymath-git`
+```bash
+$ yay -S prettymath-git
+```
+
+#### Other operating systems
+
+1. install the dependencies
+2. run `prettymath.py`
+
 ### Dependencies
 - python
 - python-sympy
